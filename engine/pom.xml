@@ -2,8 +2,9 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <name>camunda BPM - engine</name>
+  <groupId>io.cronapp</groupId>
   <artifactId>camunda-engine</artifactId>
+  <name>camunda BPM - engine</name>
 
   <parent>
     <groupId>org.camunda.bpm</groupId>
@@ -11,6 +12,19 @@
     <relativePath>../database</relativePath>
     <version>7.10.0</version>
   </parent>
+
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>artifactory.cronapp.io-releases</name>
+      <url>https://artifactory.cronapp.io/public-release</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>artifactory.cronapp.io-snapshots</name>
+      <url>https://artifactory.cronapp.io/public-snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <dependencies>
 
