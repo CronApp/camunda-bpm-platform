@@ -23,7 +23,9 @@ public class ReadOnlyValidator implements FormFieldValidator {
 
   public boolean validate(Object submittedValue, FormFieldValidatorContext validatorContext) {
     // no value was submitted
-    return submittedValue == null;
+    // return submittedValue == null;
+    // readonly should ignore submitted value
+    return true;
   }
 
 }
